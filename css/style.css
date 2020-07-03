@@ -80,3 +80,19 @@ header .hero {
 .hero .hero-text {
   width: 50%;
 }
+
+
+
+
+
+
+
+
+/* Responsiveness */
+
+@media (max-width: 768px) {
+  .hero .hero-text {
+    width: 100%;
+    text-align: center;
+  }
+}
