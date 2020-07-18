@@ -37,17 +37,47 @@ h3 { font-size: 32px; }
 
 .bg-base {
   background: var(--base-color) !important;
+  color: #fff !important;
 }
 
 .bg-primary {
   background: var(--primary-color) !important;
+  color: #000 !important;
 }
 
 .overlay {
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.btn {
+  font-weight: 600;
+}
+
+.btn:hover {
+  transition: ease 1s;
+}
+
+.btn.bg-base:hover {
+  background-color: var(--primary-color) !important;
+  color: #000 !important;
+}
+
+.btn.bg-primary:hover {
+  background-color: var(--base-color) !important;
+  color: #fff !important;
+}
+
+.section-spacing {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 /* Nav */
+
+nav {
+  font-size: var(--font-body-md);
+  font-weight: 600;
+}
 
 nav ul li {
   margin-right: 1rem;
@@ -57,34 +87,88 @@ nav ul li a {
   color: var(--base-color);
 }
 
-nav a.bg-primary:hover {
-  background-color: var(--primary-color) !important;
-  transition: ease 1s;
-  opacity: 0.7;
-}
-
 /* Header */
 
 header {
-  background: url('../img/hero2.jpg') no-repeat center center/cover;
+  background: url('../img/hero.jpg') no-repeat center center/cover;
 }
 
 header .hero {
-  height: 87vh;
+  min-height: 87vh;
 }
 
 .hero {
   color: #fff;
 }
 
-.hero .hero-text {
-  width: 50%;
+/* Services */
+
+.img-wrap {
+  height: 348px;
 }
 
+#services .img-wrap.slider1 {
+  background: url('../img/standard-courier.jpg') no-repeat center center/cover;
+}
 
+#services .img-wrap.slider2 {
+  background: url('../img/door-to-door.jpg') no-repeat center center/cover;
+}
 
+#services .img-wrap.slider3 {
+  background: url('../img/express-courier.jpg') no-repeat center center/cover;
+}
 
+.carousel-item {
+  padding: 5% 10%;
+}
 
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: var(--base-color);
+}
+
+.carousel-indicators li {
+  background-color: var(--base-color);
+}
+
+/* Why */
+
+#why {
+  background-color: #000;
+  color: #fff;
+}
+
+#why ul {
+  list-style: none;
+}
+
+#why ul li {
+  display: flex;
+  align-items: center;
+}
+
+#why ul li i {
+  margin: 1rem 2rem 1rem 0;
+  padding: .7rem;
+  font-size: 18px;
+  color: var(--base-color);
+  background: #fff;
+  border-radius: 20%;
+}
+
+#why ul li p {
+  margin-bottom: 0;
+}
+
+#why .img-wrap {
+  height: 470px;
+  background: url('../img/gian-cescon-00ByEXKcSkA-unsplash.jpg') no-repeat center center/cover;
+}
+
+#riders .img-wrap {
+  background: url('../img/rider.jpg') no-repeat center center/cover;
+}
 
 
 
