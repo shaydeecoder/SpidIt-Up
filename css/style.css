@@ -47,6 +47,7 @@ h3 { font-size: 32px; }
 
 .overlay {
   background: rgba(0, 0, 0, 0.9);
+  color: #fff;
 }
 
 .btn {
@@ -151,7 +152,7 @@ header .hero {
 #why ul li i {
   margin: 1rem 2rem 1rem 0;
   padding: .7rem;
-  font-size: 18px;
+  font-size: 30px;
   color: var(--base-color);
   background: #fff;
   border-radius: 20%;
@@ -170,6 +171,14 @@ header .hero {
   background: url('../img/rider.jpg') no-repeat center center/cover;
 }
 
+/* Contact */
+#contact {
+  background: url('../img/william-daigneault-AXbyizNdH_A-unsplash.jpg') no-repeat center center/cover;
+}
+
+#contact h2 {
+  margin-bottom: .5rem;
+}
 
 
 /* Responsiveness */
