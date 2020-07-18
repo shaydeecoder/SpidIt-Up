@@ -176,8 +176,25 @@ header .hero {
   background: url('../img/william-daigneault-AXbyizNdH_A-unsplash.jpg') no-repeat center center/cover;
 }
 
+#contact .overlay {
+  background: rgba(237, 28, 36, 0.7);
+}
+
 #contact h2 {
   margin-bottom: .5rem;
+}
+
+#contact p i {
+  margin-right: 2rem;
+}
+
+#contact ul {
+  margin-top: 3rem;
+  list-style: none;
+}
+
+#contact ul li {
+  margin-right: 2rem;
 }
 
 
