@@ -124,9 +124,11 @@ header .hero {
   padding: 5% 10%;
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-color: var(--base-color);
+#services .carousel-control-prev-icon, 
+#services .carousel-control-next-icon {
+  background: none;
+  color: var(--base-color);
+  font-size: 24px;
 }
 
 .carousel-indicators li {
@@ -176,10 +178,6 @@ header .hero {
   background: url('../img/william-daigneault-AXbyizNdH_A-unsplash.jpg') no-repeat center center/cover;
 }
 
-#contact .overlay {
-  background: rgba(237, 28, 36, 0.7);
-}
-
 #contact h2 {
   margin-bottom: .5rem;
 }
@@ -197,12 +195,88 @@ header .hero {
   margin-right: 2rem;
 }
 
+#contact p i {
+  color: var(--base-color);
+}
+
+#contact a {
+  color: var(--primary-color);
+  transition: ease-in-out 1s;
+}
+
+#contact a:hover {
+  color: var(--base-color);
+}
+
+/* Footer */
+
+footer {
+  background: #000;
+  color: #fff;
+}
+
 
 /* Responsiveness */
 
 @media (max-width: 768px) {
+  body {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  h2 { font-size: 28px; }
+  h3 { font-size: 26px; }
+
+  /* nav */
+  nav {
+    text-align: right;
+  }
+
+  /* Hero */
   .hero .hero-text {
     width: 100%;
     text-align: center;
+  }
+
+  .hero .img-wrap,
+  #why .img-wrap {
+    display: none;
+  }
+
+  /* Services */
+  #services {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  #services .img-wrap,
+  #riders .img-wrap {
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    margin-bottom: 2rem;
+    border-radius: 50%;
+  }
+
+  /* why */
+  #why ul {
+    text-align: left;
+  }
+
+  #why ul li i {
+    margin-right: 1rem;
+  }
+
+  /* contact */
+  #contact {
+    text-align: left;
+  }
+
+  #contact .contact-info {
+    padding-top: 2rem;
+  }
+
+  #contact .contact-info i {
+    font-size: 28px;
   }
 }
